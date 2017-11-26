@@ -12,4 +12,4 @@ for (t in 1:20) {
     current <- P(n, t)
     result <- append(result, current)
 }
-hist(P(n))
+hist(result)
