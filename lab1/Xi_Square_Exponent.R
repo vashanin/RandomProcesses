@@ -50,9 +50,9 @@ dataset <- rexp(10000)
 test_result <- is_exponent(dataset)
 
 if (test_result == TRUE) {
-    print("Chi Square test decided that RUNIF is genetare exponentially distributed numbers")
+    print("Chi Square test decided that REXP is genetare exponentially distributed numbers")
 } else {
-    print("Chi Square test decided that RUNIF is NOT generate exponentially distributed numbers.")
+    print("Chi Square test decided that REXP is NOT generate exponentially distributed numbers.")
 }
 
 hist(dataset)

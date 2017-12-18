@@ -41,7 +41,7 @@ fitted_amount <- 0
 
 for (i in 1:length(X))
     for (j in 1:length(Y)) {
-        if (Y[j] <= 1 - X[i]*X[i])
+        if (Y[j]*Y[j] <= 2 - X[i]*X[i])
             if ((X[i] - 1)^2 + (Y[j] - 1)^2 <= 1)      
                 if (Y[j] >= (X[i] - 1)^2)
                     fitted_amount <- fitted_amount + 1
